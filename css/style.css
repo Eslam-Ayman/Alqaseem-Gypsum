@@ -43,6 +43,7 @@
 	transform: translateX(-50%);
 	margin-left: auto;
 }
+.carousel-indicators .active{background-color: initial;}
 .carousel-indicators li , .carousel-indicators li.active
 {
 	width: initial;
@@ -62,7 +63,7 @@
     border-top: 1px solid #b6aa9e;
 }
 .carousel-indicators li a:hover , .carousel-indicators li a:focus {color: white; border-top: 2px solid white;}
-a{color: inherit;} a:hover,a:focus{color: inherit; text-decoration: none;}
+a{color: inherit;} a:hover,a:focus{color: inherit; text-decoration: none; background-color: transparent;}
 .container , .container-fluid{text-align: center;}
 .style{width: 556px; height: 305px; position: absolute; top:-100px; right:0px }
 .about{padding: 100px 0px;}
@@ -73,7 +74,7 @@ a{color: inherit;} a:hover,a:focus{color: inherit; text-decoration: none;}
 .about .img{
 	height: 205px;
     background-size: 100% 100%;
-    margin-top: 50px;
+    margin-top: 70px;
     padding: initial;
 }
 .about .img .mask{
@@ -101,7 +102,7 @@ a{color: inherit;} a:hover,a:focus{color: inherit; text-decoration: none;}
 .gallery .carousel-inner .item  , .comments .carousel-inner .item  {background-image: initial; height: initial;}
 .gallery .carousel-inner .item  img {display: inline; margin-bottom: 20px;}
 .gallery .carousel-inner .item  small {display: block;}
-.gallery .carousel-indicators {top: -70px;}
+.gallery .carousel-indicators {top: -70px; width: initial;}
 .gallery .carousel-control.right, .gallery .carousel-control.left {display: initial; background-image: initial;}
 .carousel-indicators li.active {color: #fecc79;}
 
@@ -116,7 +117,7 @@ a{color: inherit;} a:hover,a:focus{color: inherit; text-decoration: none;}
 .comments .carousel-control.right, .comments .carousel-control.left {display: initial; background-image: initial;}
 .comments .carousel-inner .item {padding: 60px;}
 .comments .carousel-inner .item span{ padding: 0% 3%; text-align: left;}
-.comments .carousel-inner .item img{ padding: 1%; height: 100%; border: 2px solid;}
+.comments .carousel-inner .item img{ padding: 1%; height: 100%; border: 2px solid; margin-bottom: 30px;}
 
 .events small {text-align: left; margin-top: 20px;}
 .events .img {height: 470px;}
@@ -222,7 +223,7 @@ h1.partener-header{
 .download small {color: #44688d;}
 .download p {color: #929291; font-size: small}
 .download p.foot {border-top: 2px solid #eeeeee; padding-top: 10px;}
-.download .input-group {    width: 30%; margin: 35px auto; margin-bottom: initial;}
+.download .input-group {    width: 55%; margin: 35px auto; margin-bottom: initial;}
 .download .input-group input , .download .input-group button  { border-radius: initial;}
 .download .input-group input {    border: 1px solid #d5d5d5;height: 44px;}
 .download .input-group button {color: white; background-color: #929291; font-weight: 700; padding: 11px 50px;}
@@ -265,5 +266,19 @@ h1.partener-header{
 .footer ul {float: none !important;}
 
 .copyright {color: #627e9d; text-align: center; padding-top: 10px; padding-bottom: 10px; border-top: 1px solid #c5c5c4;}
+
+
+@media only screen and (max-width: 768px){
+    .partener .img-responsive {margin-top: 50px; display: inline-block;}
+    .download .input-group {width: 100%}
+    .footer .follow {text-align: center;}
+    .footer .follow li {display: inline-block;}
+    .contact span , .contact .row:last-child span{display: inherit; margin-bottom: 30px;}
+    .carousel-indicators li {display: inherit;text-align: left; padding-left: 25px;}
+    .gallery .carousel-indicators {    top: -50px;}
+    .gallery .carousel-indicators li {display: table-row;}
+    .work small { margin-bottom: 40px; display: block;}
+    .work .big-5azaan {display: none;}
+}
 
 
